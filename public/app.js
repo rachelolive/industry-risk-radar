@@ -325,7 +325,7 @@ function buildMonthSelect() {
 
 function updateMasthead() {
   const li = document.getElementById('liveInd');
-  li.innerHTML = isCurrentMonth()
+  if (li) li.innerHTML = isCurrentMonth()
     ? '<span class="pulse"></span>Live feed'
     : '<span class="dot-static"></span>Archived snapshot';
   document.getElementById('footAsOf').textContent = 'Snapshot · ' + ctx().label;

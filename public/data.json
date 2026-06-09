@@ -3,7 +3,7 @@
   "methodology_version": "2.1",
   "data_mode": "live",
   "data_mode_note": "Volumes, trends and momentum are REAL Signal data (pulled 2026-06-09, monthly Nov 2025-Jun 2026). Each theme uses its primary Signal topic for this backfill; negativity uses per-theme estimates and event-severity is proxied from monthly volume spikes (the monthly job swaps in live sentiment + events). Regulatory items are web-researched, sourced and reviewed/approved (2026-06-09).",
-  "generated_at": "2026-06-09T16:15:04.825276Z",
+  "generated_at": "2026-06-09T16:33:05.217303Z",
   "current_month": "2026-05",
   "categories_meta": [
     {
@@ -4314,48 +4314,62 @@
           },
           "events": [
             {
+              "title": "Trump says he will raise US tariffs on EU cars and trucks to 25%",
+              "magnitude": 32790,
+              "date": "2026-05-01",
+              "sources": 2560,
+              "stories": 1363,
+              "entities": [
+                "European Union",
+                "Donald Trump"
+              ],
+              "categories": [
+                "financial",
+                "regulatory"
+              ],
+              "article_id": "15f4db4d-6939-3127-8153-ff40cf6c3182"
+            },
+            {
               "title": "3,700 Waymo vehicles recalled over software issue",
               "magnitude": 13200,
               "date": "2026-05-12",
               "sources": 442,
               "stories": 112,
               "entities": [
-                "Waymo",
-                "NHTSA"
-              ],
-              "categories": [
-                "product",
-                "regulatory"
-              ],
-              "article_id": "445abde8-9ee5-3e3c-a3f1-d47e7ea8a489"
-            },
-            {
-              "title": "Stellantis to recall 419,000 US vehicles over side air bag deployment",
-              "magnitude": 4290,
-              "date": "2026-05-21",
-              "sources": 205,
-              "stories": 97,
-              "entities": [
-                "Stellantis"
+                "Waymo"
               ],
               "categories": [
                 "product"
               ],
-              "article_id": "91b0e062-0781-3633-92d2-117d33269e6a"
+              "article_id": "445abde8-9ee5-3e3c-a3f1-d47e7ea8a489"
             },
             {
-              "title": "Ford recalls vehicles after roofs can detach at highway speeds",
-              "magnitude": 4260,
-              "date": "2026-05-19",
-              "sources": 142,
-              "stories": 4,
+              "title": "Ford recalls over 179,000 Bronco and Ranger vehicles over seat defect",
+              "magnitude": 9180,
+              "date": "2026-05-02",
+              "sources": 612,
+              "stories": 5,
               "entities": [
                 "Ford"
               ],
               "categories": [
                 "product"
               ],
-              "article_id": "44a3e2e9-f402-3d45-9bee-8fe8511d9560"
+              "article_id": "70e89cfc-47bf-3f07-85c3-0cab7e3e1af9"
+            },
+            {
+              "title": "GM recalls 40K contaminated brake-fluid bottles affecting stopping power",
+              "magnitude": 6930,
+              "date": "2026-05-07",
+              "sources": 231,
+              "stories": 20,
+              "entities": [
+                "General Motors"
+              ],
+              "categories": [
+                "product"
+              ],
+              "article_id": "b47d090b-63ba-3c8b-89b7-3af58d8963b6"
             }
           ],
           "delta": -5,
@@ -4445,7 +4459,50 @@
               663136
             ]
           },
-          "events": [],
+          "events": [
+            {
+              "title": "Drone strike sparks fire at Abu Dhabi nuclear plant",
+              "magnitude": 17880,
+              "date": "2026-05-17",
+              "sources": 626,
+              "stories": 354,
+              "entities": [
+                "Abu Dhabi"
+              ],
+              "categories": [
+                "operational"
+              ],
+              "article_id": "6134d4fe-cf25-3304-96f2-046f2c492ef9"
+            },
+            {
+              "title": "British Gas to pay \u00a320m fine following regulator's prepayment-meter probe",
+              "magnitude": 9660,
+              "date": "2026-05-15",
+              "sources": 336,
+              "stories": 95,
+              "entities": [
+                "British Gas"
+              ],
+              "categories": [
+                "regulatory"
+              ],
+              "article_id": "fa2b78f9-e82c-389f-8132-ebedc3d0161a"
+            },
+            {
+              "title": "Ukraine strike hits Tuapse oil terminal \u2014 fourth attack in two weeks",
+              "magnitude": 7710,
+              "date": "2026-05-01",
+              "sources": 309,
+              "stories": 93,
+              "entities": [
+                "Tuapse"
+              ],
+              "categories": [
+                "operational"
+              ],
+              "article_id": "57195146-7a97-33f4-be81-f8a8ad3c0003"
+            }
+          ],
           "delta": -15,
           "seed": false
         },
@@ -4533,7 +4590,53 @@
               111215
             ]
           },
-          "events": [],
+          "events": [
+            {
+              "title": "HSBC reviews lending policies after $400 million fraud hit",
+              "magnitude": 7380,
+              "date": "2026-05-07",
+              "sources": 248,
+              "stories": 6,
+              "entities": [
+                "HSBC"
+              ],
+              "categories": [
+                "governance",
+                "financial"
+              ],
+              "article_id": "22813284-5a74-35b6-b5c6-0f06ebed326b"
+            },
+            {
+              "title": "IMF warns AI-driven cyber threats could destabilise global financial markets",
+              "magnitude": 2970,
+              "date": "2026-05-08",
+              "sources": 390,
+              "stories": 46,
+              "entities": [
+                "IMF"
+              ],
+              "categories": [
+                "cyber"
+              ],
+              "article_id": "b44d8ea8-b476-3ddd-9d67-7ff96840a1bc"
+            },
+            {
+              "title": "PayPal, Visa and Mastercard hit by UK competition probe",
+              "magnitude": 2880,
+              "date": "2026-05-06",
+              "sources": 96,
+              "stories": 73,
+              "entities": [
+                "PayPal",
+                "Visa",
+                "Mastercard"
+              ],
+              "categories": [
+                "regulatory"
+              ],
+              "article_id": "dc112f23-a293-3467-94a6-8ad08cd89871"
+            }
+          ],
           "delta": -3,
           "seed": false
         },
@@ -4621,7 +4724,36 @@
               69741
             ]
           },
-          "events": [],
+          "events": [
+            {
+              "title": "Morrisons issues urgent recall after glass shards found in nut packets",
+              "magnitude": 4320,
+              "date": "2026-05-27",
+              "sources": 148,
+              "stories": 17,
+              "entities": [
+                "Morrisons"
+              ],
+              "categories": [
+                "product"
+              ],
+              "article_id": "bfec5c76-1036-32e6-9712-b9e32b82c6cd"
+            },
+            {
+              "title": "Naphtha shortage forces Calbee chips into monochrome packaging",
+              "magnitude": 3210,
+              "date": "2026-05-11",
+              "sources": 107,
+              "stories": 5,
+              "entities": [
+                "Calbee"
+              ],
+              "categories": [
+                "operational"
+              ],
+              "article_id": "6147bb94-8e40-3c84-886a-b375d2f81e46"
+            }
+          ],
           "delta": -7,
           "seed": false
         },
@@ -4709,7 +4841,23 @@
               269290
             ]
           },
-          "events": [],
+          "events": [
+            {
+              "title": "Pharmacist says shortage of 188 common NHS drugs is 'worst I've known'",
+              "magnitude": 6090,
+              "date": "2026-05-30",
+              "sources": 243,
+              "stories": 15,
+              "entities": [
+                "NHS"
+              ],
+              "categories": [
+                "operational",
+                "product"
+              ],
+              "article_id": "672e1363-803e-3558-bc8e-c88785be3a36"
+            }
+          ],
           "delta": -4,
           "seed": false
         },
@@ -4797,7 +4945,51 @@
               142858
             ]
           },
-          "events": [],
+          "events": [
+            {
+              "title": "Trump refiles $10B lawsuit against Wall Street Journal",
+              "magnitude": 6960,
+              "date": "2026-05-28",
+              "sources": 364,
+              "stories": 177,
+              "entities": [
+                "Wall Street Journal",
+                "Donald Trump"
+              ],
+              "categories": [
+                "governance"
+              ],
+              "article_id": "0720b43a-14a7-34ec-a7e9-61a4c9b37c07"
+            },
+            {
+              "title": "Ireland's Children's Rights Alliance asks Meta to cooperate with probe",
+              "magnitude": 6030,
+              "date": "2026-05-07",
+              "sources": 201,
+              "stories": 1,
+              "entities": [
+                "Meta"
+              ],
+              "categories": [
+                "regulatory"
+              ],
+              "article_id": "4a816013-0eb6-35ae-8a8e-f14ebb62b3d6"
+            },
+            {
+              "title": "STV staff walk out on strike on day of Holyrood election count",
+              "magnitude": 6360,
+              "date": "2026-05-08",
+              "sources": 212,
+              "stories": 7,
+              "entities": [
+                "STV"
+              ],
+              "categories": [
+                "labor"
+              ],
+              "article_id": "0ccff490-be31-3eb1-b0f3-640a761091e4"
+            }
+          ],
           "delta": -3,
           "seed": false
         },
@@ -4885,7 +5077,51 @@
               29116
             ]
           },
-          "events": [],
+          "events": [
+            {
+              "title": "Kirby McInerney announces investigation into potential AECOM securities fraud",
+              "magnitude": 2370,
+              "date": "2026-05-20",
+              "sources": 81,
+              "stories": 7,
+              "entities": [
+                "AECOM"
+              ],
+              "categories": [
+                "governance"
+              ],
+              "article_id": "714c7f05-9dcd-382b-87c3-57fd181ce13a"
+            },
+            {
+              "title": "Four states launch lawsuits against proxy adviser ISS over ESG agenda",
+              "magnitude": 450,
+              "date": "2026-05-20",
+              "sources": 15,
+              "stories": 1,
+              "entities": [
+                "ISS"
+              ],
+              "categories": [
+                "governance",
+                "regulatory"
+              ],
+              "article_id": "050a6c5b-84ab-3071-8d24-80351cd9466b"
+            },
+            {
+              "title": "Grant Shapps quits aerospace firm after watchdog probe",
+              "magnitude": 390,
+              "date": "2026-05-19",
+              "sources": 13,
+              "stories": 9,
+              "entities": [
+                "Grant Shapps"
+              ],
+              "categories": [
+                "governance"
+              ],
+              "article_id": "bd316472-2aba-3abb-a3dd-8eb53626eede"
+            }
+          ],
           "delta": -10,
           "seed": false
         },
@@ -4973,7 +5209,52 @@
               43908
             ]
           },
-          "events": [],
+          "events": [
+            {
+              "title": "EU fines Temu \u20ac200 million over illegal-product sales",
+              "magnitude": 18510,
+              "date": "2026-05-28",
+              "sources": 634,
+              "stories": 209,
+              "entities": [
+                "Temu",
+                "European Union"
+              ],
+              "categories": [
+                "regulatory",
+                "product"
+              ],
+              "article_id": "d9326f7b-75e1-39e9-bdce-cd32bdeadbcd"
+            },
+            {
+              "title": "QUIZ sets 37 stores for closure",
+              "magnitude": 6690,
+              "date": "2026-05-21",
+              "sources": 223,
+              "stories": 4,
+              "entities": [
+                "QUIZ"
+              ],
+              "categories": [
+                "financial"
+              ],
+              "article_id": "65ddbdb4-e3a1-33e6-bb18-5dce73119a53"
+            },
+            {
+              "title": "Morrisons issues urgent recall after glass shards found in nut packets",
+              "magnitude": 4320,
+              "date": "2026-05-27",
+              "sources": 148,
+              "stories": 17,
+              "entities": [
+                "Morrisons"
+              ],
+              "categories": [
+                "product"
+              ],
+              "article_id": "bfec5c76-1036-32e6-9712-b9e32b82c6cd"
+            }
+          ],
           "delta": -9,
           "seed": false
         },
@@ -5061,7 +5342,52 @@
               532420
             ]
           },
-          "events": [],
+          "events": [
+            {
+              "title": "US lawmakers demand answers from Instructure after Canvas data breaches",
+              "magnitude": 15510,
+              "date": "2026-05-12",
+              "sources": 713,
+              "stories": 120,
+              "entities": [
+                "Instructure",
+                "Canvas"
+              ],
+              "categories": [
+                "cyber"
+              ],
+              "article_id": "69005bae-9a54-3752-917a-b7ef1e4066f5"
+            },
+            {
+              "title": "Tech layoffs continue as Meta restructures for AI; LinkedIn cuts 600+ jobs",
+              "magnitude": 8760,
+              "date": "2026-05-20",
+              "sources": 297,
+              "stories": 16,
+              "entities": [
+                "Meta",
+                "LinkedIn"
+              ],
+              "categories": [
+                "labor"
+              ],
+              "article_id": "1a0c067d-4edd-38e9-8894-87c6948872e0"
+            },
+            {
+              "title": "iPhone users could get up to $95 after Apple settles lawsuit",
+              "magnitude": 7290,
+              "date": "2026-05-06",
+              "sources": 914,
+              "stories": 207,
+              "entities": [
+                "Apple"
+              ],
+              "categories": [
+                "governance"
+              ],
+              "article_id": "49a3d8f7-bbf7-3d0a-b0f1-c9b8ec072b12"
+            }
+          ],
           "delta": 1,
           "seed": false
         },
@@ -5149,7 +5475,39 @@
               309231
             ]
           },
-          "events": [],
+          "events": [
+            {
+              "title": "United flight landing at Newark strikes pole on NJ Turnpike",
+              "magnitude": 11670,
+              "date": "2026-05-03",
+              "sources": 389,
+              "stories": 12,
+              "entities": [
+                "United Airlines"
+              ],
+              "categories": [
+                "product",
+                "operational"
+              ],
+              "article_id": "a8aecf6b-bb70-3c49-a12f-ac24b04d147b"
+            },
+            {
+              "title": "Frankfurt Airport disrupted by Lufthansa strikes",
+              "magnitude": 4740,
+              "date": "2026-05-15",
+              "sources": 158,
+              "stories": 12,
+              "entities": [
+                "Lufthansa",
+                "Frankfurt Airport"
+              ],
+              "categories": [
+                "labor",
+                "operational"
+              ],
+              "article_id": "91d450a8-ab8d-37f4-9806-eee2c1fcba7c"
+            }
+          ],
           "delta": -1,
           "seed": false
         }

@@ -90,12 +90,15 @@ function renderDetail() {
   // provenance — quiet, brand-forward, no daily timestamp
   const prov = document.getElementById('prov');
   const ls = ctx().live_sector, cur = isCurrentMonth();
-  if (d.key === ls) {
-    prov.className = 'prov livep';
-    prov.innerHTML = `<span class="d" style="background:var(--low)"></span>${cur ? 'Live · Signal AI data' : 'Signal AI data · ' + ctx().label}`;
-  } else {
+  if (d.seed) {
     prov.className = 'prov sample';
     prov.innerHTML = `<span class="d" style="background:var(--mod)"></span>${cur ? 'Sample sector · live on next refresh' : 'Sample sector'}`;
+  } else if (d.key === ls && cur) {
+    prov.className = 'prov livep';
+    prov.innerHTML = `<span class="d" style="background:var(--low)"></span>Live · Signal AI data`;
+  } else {
+    prov.className = 'prov livep';
+    prov.innerHTML = `<span class="d" style="background:var(--low)"></span>Signal AI data${cur ? '' : ' · ' + ctx().label}`;
   }
 
   // score (animated count-up) + band + delta

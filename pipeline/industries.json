@@ -1,0 +1,27 @@
+{
+  "_comment": "v2 contract for the radar layout. 10 sectors + 8 THEMATIC risk categories, each theme mapped to one or more Signal topic IDs (resolved via the Signal 'resolve' tool). The monthly pipeline sums each theme's member topics. Do not edit IDs without re-resolving and bumping methodology_version.",
+  "methodology_version": "2.0",
+  "thematic_categories": [
+    { "key": "regulatory",    "label": "Regulatory & legal",     "topic_ids": ["73add752-af7d-48e7-a6e9-48232ed5e648", "f44ed6e5-512b-4348-b6d0-f5b5acf78433"] },
+    { "key": "financial",     "label": "Financial & market",     "topic_ids": ["9e853f3d-def1-449c-a3cf-32b358ee12ef", "eb16fa45-6d39-41e4-96d7-d1f2e5335f7a", "3546f963-3f94-4853-8914-e516f9b8c4d9"] },
+    { "key": "operational",   "label": "Operational & supply",   "topic_ids": ["476d585a-4f6c-4340-a560-7e4f9d19d244", "443238d2-af29-4089-a26d-0b973d04b326"] },
+    { "key": "cyber",         "label": "Cyber & data",           "topic_ids": ["ac9e387c-0f1a-4bb3-a9dc-4575c05b6e02", "78b945d8-9b55-4d4d-8f25-66b860a452c1"] },
+    { "key": "environmental", "label": "Environmental & climate","topic_ids": ["741d2150-588b-474c-9b81-c95be8492ef2", "5aa0ae0d-a79a-4574-b631-1ab74ded3611", "48a2941c-0f5d-486c-9b27-9d54b02f5d9a"] },
+    { "key": "governance",    "label": "Governance & ethics",    "topic_ids": ["ff9d1563-570f-4769-bbb5-7f3096beca0a", "dccd7fba-6c5f-4087-b8a0-0178c559b95e", "53b55f79-01a9-4679-8487-44c52fde38ff", "354cefb8-8b41-44f9-9f5e-3b46c2070d3d"] },
+    { "key": "product",       "label": "Product & safety",       "topic_ids": ["734a342f-a053-4823-9bda-8abb687182ba", "430c9609-6fe1-4d91-8d0d-690974667684"] },
+    { "key": "labor",         "label": "Labour & workforce",     "topic_ids": ["2e6aa5c5-af0e-461a-b835-b52c9c42cf92", "e55d646e-ff55-4644-931e-66df9a8b853c"] }
+  ],
+  "industries": [
+    { "key": "automotive",            "label": "Automotive",            "sector_note": "OEMs, EV makers, suppliers, mobility",        "topic_id": "1145bbd0-2a8d-494f-84e1-c4fd60360bf4", "signal_topic_name": "Automotive Industry" },
+    { "key": "energy",                "label": "Energy",                "sector_note": "Oil, gas, power, utilities, renewables",      "topic_id": "5fc92ab4-5f28-4daa-844a-ebd73d9a7b5c", "signal_topic_name": "Energy" },
+    { "key": "finance",               "label": "Finance",               "sector_note": "Banks, insurers, asset managers, fintech",    "topic_id": "011c17b2-420e-406c-a7f7-a5ab7162ba7b", "signal_topic_name": "Financial Services" },
+    { "key": "fmcg",                  "label": "FMCG",                  "sector_note": "Food, beverage, household, personal care",    "topic_id": "3538bca3-0bd0-4a23-a242-58101e8f6274", "signal_topic_name": "Fast Consumption" },
+    { "key": "healthcare",            "label": "Healthcare",            "sector_note": "Pharma, providers, medtech, biotech",         "topic_id": "ec838d2b-49db-457a-b42f-2889fb86b2eb", "signal_topic_name": "Healthcare" },
+    { "key": "media",                 "label": "Media",                 "sector_note": "Broadcast, publishing, streaming, platforms", "topic_id": "55913563-1913-4248-8454-563e30d9d77c", "signal_topic_name": "Media" },
+    { "key": "professional_services", "label": "Professional Services", "sector_note": "Consulting, legal, audit, advisory",          "topic_id": "7f552f84-f9f1-4720-8b69-477297f2e0f4", "signal_topic_name": "Advisory Services" },
+    { "key": "retail",                "label": "Retail",                "sector_note": "Grocers, apparel, e-commerce",                "topic_id": "5f90389d-4fc8-438b-9f85-075166891e75", "signal_topic_name": "Retail" },
+    { "key": "technology",            "label": "Technology",            "sector_note": "Software, hardware, platforms, AI",           "topic_id": "c4dc125c-8dfc-48b0-aa06-5143e78644bf", "signal_topic_name": "Technology" },
+    { "key": "travel",                "label": "Travel",                "sector_note": "Airlines, hotels, OTAs, tourism",             "topic_id": "9048275c-6ee0-442f-8600-5e79530a0bfe", "signal_topic_name": "Travel" }
+  ],
+  "regulatory_watchlist_note": "Regulatory items are NOT from Signal. Web-sourced (regulator sites, government registers, law-firm trackers), human-reviewed. Each carries a source URL + effective/deadline date, bucketed into 3-6m and 6-12m windows."
+}

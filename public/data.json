@@ -1,0 +1,4256 @@
+{
+  "schema_version": "2.0",
+  "methodology_version": "2.0",
+  "data_mode": "prototype",
+  "data_mode_note": "PROTOTYPE: Automotive uses real Signal data (2026-06-09) across all 8 themes; volumes/trends real, per-theme negativity & event severity estimated. Other 9 sectors are sample (seed:true). Regulatory items illustrative. Live pipeline replaces all. See pipeline/runbook.md.",
+  "generated_at": "2026-06-09T15:27:06.660723Z",
+  "current_month": "2026-06",
+  "categories_meta": [
+    {
+      "key": "regulatory",
+      "label": "Regulatory & legal"
+    },
+    {
+      "key": "financial",
+      "label": "Financial & market"
+    },
+    {
+      "key": "operational",
+      "label": "Operational & supply"
+    },
+    {
+      "key": "cyber",
+      "label": "Cyber & data"
+    },
+    {
+      "key": "environmental",
+      "label": "Environmental & climate"
+    },
+    {
+      "key": "governance",
+      "label": "Governance & ethics"
+    },
+    {
+      "key": "product",
+      "label": "Product & safety"
+    },
+    {
+      "key": "labor",
+      "label": "Labour & workforce"
+    }
+  ],
+  "months": {
+    "2026-06": {
+      "label": "June 2026",
+      "live_sector": "automotive",
+      "industries": [
+        {
+          "key": "automotive",
+          "label": "Automotive",
+          "sector_note": "OEMs, EV makers, suppliers, mobility",
+          "risk_score": 53,
+          "delta": 6,
+          "seed": false,
+          "sentiment_neg": 0.57,
+          "volume_total": 258339,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 55,
+              "volume": 49544,
+              "band": "moderate"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 46,
+              "volume": 4981,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 34,
+              "volume": 34049,
+              "band": "low"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 36,
+              "volume": 237,
+              "band": "low"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 39,
+              "volume": 29726,
+              "band": "low"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 59,
+              "volume": 113577,
+              "band": "moderate"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 65,
+              "volume": 22246,
+              "band": "elevated"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 55,
+              "volume": 3979,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              49696,
+              55309,
+              48360,
+              50955,
+              57775,
+              57295,
+              55921,
+              54494,
+              62806,
+              49082,
+              43713,
+              48244
+            ]
+          },
+          "events": [
+            {
+              "title": "3,700 Waymo vehicles recalled over software issue",
+              "magnitude": 13200,
+              "date": "2026-05-12",
+              "sources": 442,
+              "stories": 112,
+              "entities": [
+                "Waymo",
+                "NHTSA"
+              ],
+              "categories": [
+                "product",
+                "regulatory"
+              ],
+              "article_id": "445abde8-9ee5-3e3c-a3f1-d47e7ea8a489"
+            },
+            {
+              "title": "Subaru recalls nearly 70K vehicles over affected models",
+              "magnitude": 5610,
+              "date": "2026-06-04",
+              "sources": 192,
+              "stories": 8,
+              "entities": [
+                "Subaru"
+              ],
+              "categories": [
+                "product"
+              ],
+              "article_id": "bf5ef7fe-747d-3946-bc34-4996388f3fb1"
+            },
+            {
+              "title": "Toyota recalls 81K cars as dashboard failure hides safety alerts",
+              "magnitude": 4650,
+              "date": "2026-06-02",
+              "sources": 155,
+              "stories": 3,
+              "entities": [
+                "Toyota"
+              ],
+              "categories": [
+                "product"
+              ],
+              "article_id": "f8134cab-5c5a-373f-b3c6-cf2c9b8facf4"
+            },
+            {
+              "title": "Stellantis to recall 419,000 US vehicles over side air bag deployment",
+              "magnitude": 4290,
+              "date": "2026-05-21",
+              "sources": 205,
+              "stories": 97,
+              "entities": [
+                "Stellantis"
+              ],
+              "categories": [
+                "product"
+              ],
+              "article_id": "91b0e062-0781-3633-92d2-117d33269e6a"
+            },
+            {
+              "title": "Ford recalls vehicles after roofs can detach at highway speeds",
+              "magnitude": 4260,
+              "date": "2026-05-19",
+              "sources": 142,
+              "stories": 4,
+              "entities": [
+                "Ford"
+              ],
+              "categories": [
+                "product"
+              ],
+              "article_id": "44a3e2e9-f402-3d45-9bee-8fe8511d9560"
+            }
+          ]
+        },
+        {
+          "key": "energy",
+          "label": "Energy",
+          "sector_note": "Oil, gas, power, utilities, renewables",
+          "risk_score": 64,
+          "delta": 4,
+          "seed": true,
+          "sentiment_neg": 0.55,
+          "volume_total": 179803,
+          "band": "elevated",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 77,
+              "volume": 25381,
+              "band": "elevated"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 53,
+              "volume": 18499,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 68,
+              "volume": 27340,
+              "band": "elevated"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 51,
+              "volume": 20417,
+              "band": "moderate"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 86,
+              "volume": 36331,
+              "band": "high"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 50,
+              "volume": 21253,
+              "band": "moderate"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 42,
+              "volume": 14962,
+              "band": "moderate"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 50,
+              "volume": 15620,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              36821,
+              36753,
+              37092,
+              34200,
+              35719,
+              35035,
+              35910,
+              38357,
+              37412,
+              39369,
+              37865,
+              42090
+            ]
+          },
+          "events": [
+            {
+              "title": "Regulator opens probe into grid-failure disclosures",
+              "magnitude": 1840,
+              "date": "2026-05-28",
+              "sources": 612,
+              "stories": 140,
+              "entities": [
+                "National Grid",
+                "Ofgem"
+              ],
+              "categories": [
+                "regulatory",
+                "operational"
+              ],
+              "article_id": ""
+            },
+            {
+              "title": "Court orders major emitter to accelerate decarbonisation",
+              "magnitude": 1210,
+              "date": "2026-05-19",
+              "sources": 503,
+              "stories": 90,
+              "entities": [
+                "Shell"
+              ],
+              "categories": [
+                "environmental",
+                "regulatory"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "finance",
+          "label": "Finance",
+          "sector_note": "Banks, insurers, asset managers, fintech",
+          "risk_score": 63,
+          "delta": -3,
+          "seed": true,
+          "sentiment_neg": 0.57,
+          "volume_total": 200266,
+          "band": "elevated",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 82,
+              "volume": 39286,
+              "band": "high"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 74,
+              "volume": 30078,
+              "band": "elevated"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 47,
+              "volume": 18650,
+              "band": "moderate"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 74,
+              "volume": 29074,
+              "band": "elevated"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 31,
+              "volume": 13020,
+              "band": "low"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 68,
+              "volume": 34496,
+              "band": "elevated"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 39,
+              "volume": 17245,
+              "band": "low"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 44,
+              "volume": 18417,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              42490,
+              38637,
+              41450,
+              42580,
+              42097,
+              40272,
+              37664,
+              36682,
+              34079,
+              36378,
+              34936,
+              38079
+            ]
+          },
+          "events": [
+            {
+              "title": "Conduct authority fines lender over mis-sold products",
+              "magnitude": 1520,
+              "date": "2026-05-26",
+              "sources": 488,
+              "stories": 80,
+              "entities": [
+                "FCA"
+              ],
+              "categories": [
+                "regulatory",
+                "governance"
+              ],
+              "article_id": ""
+            },
+            {
+              "title": "Credential-stuffing wave hits mobile banking apps",
+              "magnitude": 1100,
+              "date": "2026-05-14",
+              "sources": 357,
+              "stories": 55,
+              "entities": [],
+              "categories": [
+                "cyber"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "fmcg",
+          "label": "FMCG",
+          "sector_note": "Food, beverage, household, personal care",
+          "risk_score": 54,
+          "delta": -2,
+          "seed": true,
+          "sentiment_neg": 0.57,
+          "volume_total": 136572,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 47,
+              "volume": 16133,
+              "band": "moderate"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 49,
+              "volume": 17054,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 64,
+              "volume": 17038,
+              "band": "elevated"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 38,
+              "volume": 13506,
+              "band": "low"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 58,
+              "volume": 19377,
+              "band": "moderate"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 44,
+              "volume": 13592,
+              "band": "moderate"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 69,
+              "volume": 22961,
+              "band": "elevated"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 52,
+              "volume": 16911,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              26722,
+              27395,
+              26440,
+              30026,
+              27492,
+              28263,
+              27264,
+              26605,
+              26824,
+              25629,
+              24679,
+              26099
+            ]
+          },
+          "events": [
+            {
+              "title": "Food brand recalls product over contamination",
+              "magnitude": 980,
+              "date": "2026-06-01",
+              "sources": 260,
+              "stories": 40,
+              "entities": [],
+              "categories": [
+                "product",
+                "operational"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "healthcare",
+          "label": "Healthcare",
+          "sector_note": "Pharma, providers, medtech, biotech",
+          "risk_score": 60,
+          "delta": 2,
+          "seed": true,
+          "sentiment_neg": 0.57,
+          "volume_total": 124845,
+          "band": "elevated",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 79,
+              "volume": 25510,
+              "band": "elevated"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 47,
+              "volume": 14115,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 52,
+              "volume": 12783,
+              "band": "moderate"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 49,
+              "volume": 13411,
+              "band": "moderate"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 35,
+              "volume": 11167,
+              "band": "low"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 66,
+              "volume": 18719,
+              "band": "elevated"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 74,
+              "volume": 19358,
+              "band": "elevated"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 39,
+              "volume": 9782,
+              "band": "low"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              23505,
+              24118,
+              23796,
+              25539,
+              24459,
+              24797,
+              22589,
+              26229,
+              26302,
+              24412,
+              23920,
+              27260
+            ]
+          },
+          "events": [
+            {
+              "title": "Agency flags safety signal for blockbuster therapy",
+              "magnitude": 1390,
+              "date": "2026-05-24",
+              "sources": 512,
+              "stories": 60,
+              "entities": [
+                "FDA"
+              ],
+              "categories": [
+                "product",
+                "regulatory"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "media",
+          "label": "Media",
+          "sector_note": "Broadcast, publishing, streaming, platforms",
+          "risk_score": 50,
+          "delta": 3,
+          "seed": true,
+          "sentiment_neg": 0.56,
+          "volume_total": 102872,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 63,
+              "volume": 19839,
+              "band": "elevated"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 49,
+              "volume": 13706,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 37,
+              "volume": 10489,
+              "band": "low"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 58,
+              "volume": 14650,
+              "band": "moderate"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 25,
+              "volume": 6254,
+              "band": "low"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 57,
+              "volume": 15642,
+              "band": "moderate"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 35,
+              "volume": 9043,
+              "band": "low"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 43,
+              "volume": 13249,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              21112,
+              21598,
+              21175,
+              20178,
+              20018,
+              20694,
+              19558,
+              21972,
+              22842,
+              21966,
+              23701,
+              21734
+            ]
+          },
+          "events": [
+            {
+              "title": "Platform faces scrutiny over content-moderation rules",
+              "magnitude": 760,
+              "date": "2026-05-27",
+              "sources": 210,
+              "stories": 35,
+              "entities": [],
+              "categories": [
+                "regulatory",
+                "governance"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "professional_services",
+          "label": "Professional Services",
+          "sector_note": "Consulting, legal, audit, advisory",
+          "risk_score": 48,
+          "delta": 1,
+          "seed": true,
+          "sentiment_neg": 0.57,
+          "volume_total": 75090,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 57,
+              "volume": 11756,
+              "band": "moderate"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 52,
+              "volume": 11737,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 35,
+              "volume": 6038,
+              "band": "low"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 52,
+              "volume": 13100,
+              "band": "moderate"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 28,
+              "volume": 6749,
+              "band": "low"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 64,
+              "volume": 11469,
+              "band": "elevated"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 30,
+              "volume": 5009,
+              "band": "low"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 41,
+              "volume": 9232,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              14758,
+              14540,
+              15033,
+              16325,
+              15538,
+              14949,
+              14805,
+              13715,
+              15049,
+              14615,
+              15276,
+              15256
+            ]
+          },
+          "events": [
+            {
+              "title": "Consultancy faces audit-quality investigation",
+              "magnitude": 640,
+              "date": "2026-05-19",
+              "sources": 150,
+              "stories": 18,
+              "entities": [],
+              "categories": [
+                "governance",
+                "regulatory"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "retail",
+          "label": "Retail",
+          "sector_note": "Grocers, apparel, e-commerce",
+          "risk_score": 52,
+          "delta": -5,
+          "seed": true,
+          "sentiment_neg": 0.57,
+          "volume_total": 136311,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 38,
+              "volume": 11369,
+              "band": "low"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 56,
+              "volume": 17893,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 61,
+              "volume": 20604,
+              "band": "elevated"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 51,
+              "volume": 21074,
+              "band": "moderate"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 44,
+              "volume": 15115,
+              "band": "moderate"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 41,
+              "volume": 13445,
+              "band": "moderate"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 48,
+              "volume": 16979,
+              "band": "moderate"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 67,
+              "volume": 19832,
+              "band": "elevated"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              28578,
+              27733,
+              26277,
+              26473,
+              29911,
+              26269,
+              26763,
+              23944,
+              24650,
+              23759,
+              22118,
+              22604
+            ]
+          },
+          "events": [
+            {
+              "title": "Retailer breach exposes customer payment data",
+              "magnitude": 1120,
+              "date": "2026-05-31",
+              "sources": 340,
+              "stories": 60,
+              "entities": [],
+              "categories": [
+                "cyber"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "technology",
+          "label": "Technology",
+          "sector_note": "Software, hardware, platforms, AI",
+          "risk_score": 61,
+          "delta": 9,
+          "seed": true,
+          "sentiment_neg": 0.58,
+          "volume_total": 279781,
+          "band": "elevated",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 77,
+              "volume": 48084,
+              "band": "elevated"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 56,
+              "volume": 36481,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 38,
+              "volume": 25188,
+              "band": "low"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 85,
+              "volume": 55414,
+              "band": "high"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 29,
+              "volume": 21345,
+              "band": "low"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 64,
+              "volume": 44576,
+              "band": "elevated"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 48,
+              "volume": 23896,
+              "band": "moderate"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 47,
+              "volume": 24797,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              57654,
+              56034,
+              55255,
+              54236,
+              58366,
+              54024,
+              57207,
+              65288,
+              72260,
+              64908,
+              64564,
+              65855
+            ]
+          },
+          "events": [
+            {
+              "title": "Antitrust suit targets platform bundling practices",
+              "magnitude": 1980,
+              "date": "2026-05-27",
+              "sources": 690,
+              "stories": 120,
+              "entities": [
+                "DOJ"
+              ],
+              "categories": [
+                "regulatory",
+                "governance"
+              ],
+              "article_id": ""
+            },
+            {
+              "title": "Zero-day exploit hits widely used enterprise stack",
+              "magnitude": 1520,
+              "date": "2026-05-13",
+              "sources": 540,
+              "stories": 80,
+              "entities": [],
+              "categories": [
+                "cyber"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "travel",
+          "label": "Travel",
+          "sector_note": "Airlines, hotels, OTAs, tourism",
+          "risk_score": 58,
+          "delta": 7,
+          "seed": true,
+          "sentiment_neg": 0.56,
+          "volume_total": 100387,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 59,
+              "volume": 11953,
+              "band": "moderate"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 49,
+              "volume": 13165,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 71,
+              "volume": 15734,
+              "band": "elevated"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 46,
+              "volume": 8241,
+              "band": "moderate"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 49,
+              "volume": 10469,
+              "band": "moderate"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 44,
+              "volume": 9790,
+              "band": "moderate"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 68,
+              "volume": 16009,
+              "band": "elevated"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 63,
+              "volume": 15026,
+              "band": "elevated"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              19720,
+              19303,
+              19681,
+              20358,
+              19814,
+              19332,
+              19963,
+              25300,
+              23243,
+              22879,
+              24341,
+              23296
+            ]
+          },
+          "events": [
+            {
+              "title": "Safety regulator grounds fleet pending inspections",
+              "magnitude": 2080,
+              "date": "2026-05-30",
+              "sources": 741,
+              "stories": 100,
+              "entities": [
+                "FAA"
+              ],
+              "categories": [
+                "product",
+                "regulatory"
+              ],
+              "article_id": ""
+            }
+          ]
+        }
+      ],
+      "regulatory": {
+        "automotive": [
+          {
+            "name": "EU Battery Passport traceability mandate",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-09",
+            "summary": "EV batteries require a digital passport covering provenance, carbon footprint and recyclability.",
+            "source": "https://eur-lex.europa.eu"
+          },
+          {
+            "name": "EU General Safety Regulation II \u2014 mandatory ADAS",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-09",
+            "summary": "New driver-assistance systems become mandatory on all new vehicle types.",
+            "source": "https://eur-lex.europa.eu"
+          },
+          {
+            "name": "US NHTSA automatic emergency braking rule",
+            "jurisdiction": "US",
+            "window": "6-12m",
+            "effective_date": "2027-02",
+            "summary": "Phase-in deadline for AEB performance standards on light vehicles.",
+            "source": "https://www.nhtsa.gov"
+          }
+        ],
+        "energy": [
+          {
+            "name": "EU methane-emissions monitoring rules",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-09",
+            "summary": "Mandatory leak-detection and reporting for upstream operators.",
+            "source": "https://energy.ec.europa.eu"
+          },
+          {
+            "name": "Carbon border adjustment \u2014 definitive phase",
+            "jurisdiction": "EU",
+            "window": "6-12m",
+            "effective_date": "2027-01",
+            "summary": "Importers of carbon-intensive goods begin paying the adjustment in full.",
+            "source": "https://taxation-customs.ec.europa.eu"
+          }
+        ],
+        "finance": [
+          {
+            "name": "EU DORA supervisory testing milestone",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-09",
+            "summary": "Digital Operational Resilience Act testing requirements take effect.",
+            "source": "https://www.eiopa.europa.eu"
+          },
+          {
+            "name": "Basel III endgame \u2014 output floor step-up",
+            "jurisdiction": "Global",
+            "window": "6-12m",
+            "effective_date": "2027-01",
+            "summary": "Higher capital floors phase in, reshaping risk-weight modelling.",
+            "source": "https://www.bis.org"
+          }
+        ],
+        "healthcare": [
+          {
+            "name": "EU Joint Clinical Assessment framework",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-09",
+            "summary": "Centralised health-technology assessment begins for new oncology and advanced therapies.",
+            "source": "https://health.ec.europa.eu"
+          },
+          {
+            "name": "US drug-pricing negotiation expansion",
+            "jurisdiction": "US",
+            "window": "6-12m",
+            "effective_date": "2027-01",
+            "summary": "Additional high-spend therapeutics enter negotiated-price selection.",
+            "source": "https://www.cms.gov"
+          }
+        ],
+        "technology": [
+          {
+            "name": "EU AI Act \u2014 high-risk system obligations",
+            "jurisdiction": "EU",
+            "window": "6-12m",
+            "effective_date": "2027-02",
+            "summary": "High-risk AI providers must complete conformity assessments and maintain technical documentation.",
+            "source": "https://artificialintelligenceact.eu"
+          },
+          {
+            "name": "EU DMA interoperability requirements",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-10",
+            "summary": "Designated gatekeepers face expanded data-portability and interoperability duties.",
+            "source": "https://digital-markets-act.ec.europa.eu"
+          }
+        ],
+        "fmcg": [
+          {
+            "name": "EU deforestation-free supply chain rule",
+            "jurisdiction": "EU",
+            "window": "6-12m",
+            "effective_date": "2027-01",
+            "summary": "Operators must prove key commodities are deforestation-free.",
+            "source": "https://environment.ec.europa.eu"
+          }
+        ],
+        "media": [
+          {
+            "name": "EU Digital Services Act audit cycle",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-10",
+            "summary": "Large platforms face the next independent systemic-risk audit.",
+            "source": "https://digital-strategy.ec.europa.eu"
+          }
+        ],
+        "retail": [
+          {
+            "name": "EU supply-chain due-diligence duty",
+            "jurisdiction": "EU",
+            "window": "6-12m",
+            "effective_date": "2027-01",
+            "summary": "Larger retailers must identify and address adverse labour and environmental impacts.",
+            "source": "https://commission.europa.eu"
+          }
+        ],
+        "professional_services": [
+          {
+            "name": "UK audit-market reform measures",
+            "jurisdiction": "UK",
+            "window": "6-12m",
+            "effective_date": "2027-03",
+            "summary": "Operational separation and resilience requirements for major audit firms.",
+            "source": "https://www.frc.org.uk"
+          }
+        ],
+        "travel": [
+          {
+            "name": "EU air passenger rights revision",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-10",
+            "summary": "Updated compensation thresholds and delay definitions for carriers.",
+            "source": "https://transport.ec.europa.eu"
+          }
+        ]
+      }
+    },
+    "2026-05": {
+      "label": "May 2026",
+      "live_sector": "automotive",
+      "industries": [
+        {
+          "key": "automotive",
+          "label": "Automotive",
+          "sector_note": "OEMs, EV makers, suppliers, mobility",
+          "risk_score": 47,
+          "delta": 4,
+          "seed": false,
+          "sentiment_neg": 0.51,
+          "volume_total": 229093,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 49,
+              "volume": 43935,
+              "band": "moderate"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 41,
+              "volume": 4417,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 30,
+              "volume": 30194,
+              "band": "low"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 32,
+              "volume": 210,
+              "band": "low"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 35,
+              "volume": 26361,
+              "band": "low"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 52,
+              "volume": 100719,
+              "band": "moderate"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 58,
+              "volume": 19728,
+              "band": "moderate"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 49,
+              "volume": 3529,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              44070,
+              49048,
+              42885,
+              45187,
+              51234,
+              50809,
+              49590,
+              48325,
+              55696,
+              43526,
+              38764,
+              42782
+            ]
+          },
+          "events": [
+            {
+              "title": "3,700 Waymo vehicles recalled over software issue",
+              "magnitude": 13200,
+              "date": "2026-05-12",
+              "sources": 442,
+              "stories": 112,
+              "entities": [
+                "Waymo",
+                "NHTSA"
+              ],
+              "categories": [
+                "product",
+                "regulatory"
+              ],
+              "article_id": "445abde8-9ee5-3e3c-a3f1-d47e7ea8a489"
+            },
+            {
+              "title": "Subaru recalls nearly 70K vehicles over affected models",
+              "magnitude": 5610,
+              "date": "2026-06-04",
+              "sources": 192,
+              "stories": 8,
+              "entities": [
+                "Subaru"
+              ],
+              "categories": [
+                "product"
+              ],
+              "article_id": "bf5ef7fe-747d-3946-bc34-4996388f3fb1"
+            },
+            {
+              "title": "Toyota recalls 81K cars as dashboard failure hides safety alerts",
+              "magnitude": 4650,
+              "date": "2026-06-02",
+              "sources": 155,
+              "stories": 3,
+              "entities": [
+                "Toyota"
+              ],
+              "categories": [
+                "product"
+              ],
+              "article_id": "f8134cab-5c5a-373f-b3c6-cf2c9b8facf4"
+            },
+            {
+              "title": "Stellantis to recall 419,000 US vehicles over side air bag deployment",
+              "magnitude": 4290,
+              "date": "2026-05-21",
+              "sources": 205,
+              "stories": 97,
+              "entities": [
+                "Stellantis"
+              ],
+              "categories": [
+                "product"
+              ],
+              "article_id": "91b0e062-0781-3633-92d2-117d33269e6a"
+            },
+            {
+              "title": "Ford recalls vehicles after roofs can detach at highway speeds",
+              "magnitude": 4260,
+              "date": "2026-05-19",
+              "sources": 142,
+              "stories": 4,
+              "entities": [
+                "Ford"
+              ],
+              "categories": [
+                "product"
+              ],
+              "article_id": "44a3e2e9-f402-3d45-9bee-8fe8511d9560"
+            }
+          ]
+        },
+        {
+          "key": "energy",
+          "label": "Energy",
+          "sector_note": "Oil, gas, power, utilities, renewables",
+          "risk_score": 60,
+          "delta": 3,
+          "seed": true,
+          "sentiment_neg": 0.52,
+          "volume_total": 168565,
+          "band": "elevated",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 72,
+              "volume": 23795,
+              "band": "elevated"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 50,
+              "volume": 17343,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 64,
+              "volume": 25631,
+              "band": "elevated"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 48,
+              "volume": 19141,
+              "band": "moderate"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 81,
+              "volume": 34060,
+              "band": "high"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 47,
+              "volume": 19925,
+              "band": "moderate"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 39,
+              "volume": 14027,
+              "band": "low"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 47,
+              "volume": 14644,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              34520,
+              34456,
+              34774,
+              32062,
+              33487,
+              32845,
+              33666,
+              35960,
+              35074,
+              36908,
+              35498,
+              39459
+            ]
+          },
+          "events": [
+            {
+              "title": "Regulator opens probe into grid-failure disclosures",
+              "magnitude": 1840,
+              "date": "2026-05-28",
+              "sources": 612,
+              "stories": 140,
+              "entities": [
+                "National Grid",
+                "Ofgem"
+              ],
+              "categories": [
+                "regulatory",
+                "operational"
+              ],
+              "article_id": ""
+            },
+            {
+              "title": "Court orders major emitter to accelerate decarbonisation",
+              "magnitude": 1210,
+              "date": "2026-05-19",
+              "sources": 503,
+              "stories": 90,
+              "entities": [
+                "Shell"
+              ],
+              "categories": [
+                "environmental",
+                "regulatory"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "finance",
+          "label": "Finance",
+          "sector_note": "Banks, insurers, asset managers, fintech",
+          "risk_score": 66,
+          "delta": -2,
+          "seed": true,
+          "sentiment_neg": 0.6,
+          "volume_total": 209802,
+          "band": "elevated",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 86,
+              "volume": 41157,
+              "band": "high"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 78,
+              "volume": 31510,
+              "band": "elevated"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 49,
+              "volume": 19538,
+              "band": "moderate"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 78,
+              "volume": 30458,
+              "band": "elevated"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 32,
+              "volume": 13640,
+              "band": "low"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 71,
+              "volume": 36139,
+              "band": "elevated"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 41,
+              "volume": 18066,
+              "band": "moderate"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 46,
+              "volume": 19294,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              44513,
+              40477,
+              43424,
+              44608,
+              44102,
+              42190,
+              39458,
+              38429,
+              35702,
+              38110,
+              36600,
+              39892
+            ]
+          },
+          "events": [
+            {
+              "title": "Conduct authority fines lender over mis-sold products",
+              "magnitude": 1520,
+              "date": "2026-05-26",
+              "sources": 488,
+              "stories": 80,
+              "entities": [
+                "FCA"
+              ],
+              "categories": [
+                "regulatory",
+                "governance"
+              ],
+              "article_id": ""
+            },
+            {
+              "title": "Credential-stuffing wave hits mobile banking apps",
+              "magnitude": 1100,
+              "date": "2026-05-14",
+              "sources": 357,
+              "stories": 55,
+              "entities": [],
+              "categories": [
+                "cyber"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "fmcg",
+          "label": "FMCG",
+          "sector_note": "Food, beverage, household, personal care",
+          "risk_score": 56,
+          "delta": -1,
+          "seed": true,
+          "sentiment_neg": 0.59,
+          "volume_total": 141630,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 49,
+              "volume": 16731,
+              "band": "moderate"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 51,
+              "volume": 17686,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 66,
+              "volume": 17669,
+              "band": "elevated"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 39,
+              "volume": 14006,
+              "band": "low"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 60,
+              "volume": 20095,
+              "band": "elevated"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 46,
+              "volume": 14095,
+              "band": "moderate"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 72,
+              "volume": 23811,
+              "band": "elevated"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 54,
+              "volume": 17537,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              27712,
+              28410,
+              27419,
+              31138,
+              28510,
+              29310,
+              28274,
+              27590,
+              27817,
+              26578,
+              25593,
+              27066
+            ]
+          },
+          "events": [
+            {
+              "title": "Food brand recalls product over contamination",
+              "magnitude": 980,
+              "date": "2026-06-01",
+              "sources": 260,
+              "stories": 40,
+              "entities": [],
+              "categories": [
+                "product",
+                "operational"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "healthcare",
+          "label": "Healthcare",
+          "sector_note": "Pharma, providers, medtech, biotech",
+          "risk_score": 58,
+          "delta": 1,
+          "seed": true,
+          "sentiment_neg": 0.55,
+          "volume_total": 120684,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 76,
+              "volume": 24660,
+              "band": "elevated"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 45,
+              "volume": 13644,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 50,
+              "volume": 12357,
+              "band": "moderate"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 47,
+              "volume": 12964,
+              "band": "moderate"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 34,
+              "volume": 10795,
+              "band": "low"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 64,
+              "volume": 18095,
+              "band": "elevated"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 72,
+              "volume": 18713,
+              "band": "elevated"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 38,
+              "volume": 9456,
+              "band": "low"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              22722,
+              23314,
+              23003,
+              24688,
+              23644,
+              23970,
+              21836,
+              25355,
+              25425,
+              23598,
+              23123,
+              26351
+            ]
+          },
+          "events": [
+            {
+              "title": "Agency flags safety signal for blockbuster therapy",
+              "magnitude": 1390,
+              "date": "2026-05-24",
+              "sources": 512,
+              "stories": 60,
+              "entities": [
+                "FDA"
+              ],
+              "categories": [
+                "product",
+                "regulatory"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "media",
+          "label": "Media",
+          "sector_note": "Broadcast, publishing, streaming, platforms",
+          "risk_score": 47,
+          "delta": 2,
+          "seed": true,
+          "sentiment_neg": 0.53,
+          "volume_total": 96700,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 59,
+              "volume": 18649,
+              "band": "moderate"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 46,
+              "volume": 12884,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 35,
+              "volume": 9860,
+              "band": "low"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 55,
+              "volume": 13771,
+              "band": "moderate"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 24,
+              "volume": 5879,
+              "band": "low"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 54,
+              "volume": 14703,
+              "band": "moderate"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 33,
+              "volume": 8500,
+              "band": "low"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 40,
+              "volume": 12454,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              19845,
+              20302,
+              19904,
+              18967,
+              18817,
+              19452,
+              18385,
+              20654,
+              21471,
+              20648,
+              22279,
+              20430
+            ]
+          },
+          "events": [
+            {
+              "title": "Platform faces scrutiny over content-moderation rules",
+              "magnitude": 760,
+              "date": "2026-05-27",
+              "sources": 210,
+              "stories": 35,
+              "entities": [],
+              "categories": [
+                "regulatory",
+                "governance"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "professional_services",
+          "label": "Professional Services",
+          "sector_note": "Consulting, legal, audit, advisory",
+          "risk_score": 47,
+          "delta": 1,
+          "seed": true,
+          "sentiment_neg": 0.56,
+          "volume_total": 73526,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 56,
+              "volume": 11511,
+              "band": "moderate"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 51,
+              "volume": 11492,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 34,
+              "volume": 5912,
+              "band": "low"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 51,
+              "volume": 12827,
+              "band": "moderate"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 27,
+              "volume": 6608,
+              "band": "low"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 63,
+              "volume": 11230,
+              "band": "elevated"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 29,
+              "volume": 4905,
+              "band": "low"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 40,
+              "volume": 9040,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              14451,
+              14237,
+              14720,
+              15985,
+              15214,
+              14638,
+              14497,
+              13429,
+              14735,
+              14311,
+              14958,
+              14938
+            ]
+          },
+          "events": [
+            {
+              "title": "Consultancy faces audit-quality investigation",
+              "magnitude": 640,
+              "date": "2026-05-19",
+              "sources": 150,
+              "stories": 18,
+              "entities": [],
+              "categories": [
+                "governance",
+                "regulatory"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "retail",
+          "label": "Retail",
+          "sector_note": "Grocers, apparel, e-commerce",
+          "risk_score": 57,
+          "delta": -4,
+          "seed": true,
+          "sentiment_neg": 0.62,
+          "volume_total": 149418,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 42,
+              "volume": 12462,
+              "band": "moderate"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 61,
+              "volume": 19613,
+              "band": "elevated"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 67,
+              "volume": 22585,
+              "band": "elevated"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 56,
+              "volume": 23100,
+              "band": "moderate"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 48,
+              "volume": 16568,
+              "band": "moderate"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 45,
+              "volume": 14738,
+              "band": "moderate"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 53,
+              "volume": 18612,
+              "band": "moderate"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 73,
+              "volume": 21739,
+              "band": "elevated"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              31326,
+              30400,
+              28804,
+              29018,
+              32787,
+              28795,
+              29336,
+              26246,
+              27020,
+              26044,
+              24245,
+              24777
+            ]
+          },
+          "events": [
+            {
+              "title": "Retailer breach exposes customer payment data",
+              "magnitude": 1120,
+              "date": "2026-05-31",
+              "sources": 340,
+              "stories": 60,
+              "entities": [],
+              "categories": [
+                "cyber"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "technology",
+          "label": "Technology",
+          "sector_note": "Software, hardware, platforms, AI",
+          "risk_score": 52,
+          "delta": 6,
+          "seed": true,
+          "sentiment_neg": 0.49,
+          "volume_total": 238502,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 66,
+              "volume": 40990,
+              "band": "elevated"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 48,
+              "volume": 31099,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 32,
+              "volume": 21472,
+              "band": "low"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 72,
+              "volume": 47238,
+              "band": "elevated"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 25,
+              "volume": 18196,
+              "band": "low"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 55,
+              "volume": 37999,
+              "band": "moderate"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 41,
+              "volume": 20370,
+              "band": "moderate"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 40,
+              "volume": 21138,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              49148,
+              47767,
+              47103,
+              46234,
+              49755,
+              46053,
+              48767,
+              55655,
+              61599,
+              55331,
+              55038,
+              56139
+            ]
+          },
+          "events": [
+            {
+              "title": "Antitrust suit targets platform bundling practices",
+              "magnitude": 1980,
+              "date": "2026-05-27",
+              "sources": 690,
+              "stories": 120,
+              "entities": [
+                "DOJ"
+              ],
+              "categories": [
+                "regulatory",
+                "governance"
+              ],
+              "article_id": ""
+            },
+            {
+              "title": "Zero-day exploit hits widely used enterprise stack",
+              "magnitude": 1520,
+              "date": "2026-05-13",
+              "sources": 540,
+              "stories": 80,
+              "entities": [],
+              "categories": [
+                "cyber"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "travel",
+          "label": "Travel",
+          "sector_note": "Airlines, hotels, OTAs, tourism",
+          "risk_score": 51,
+          "delta": 5,
+          "seed": true,
+          "sentiment_neg": 0.49,
+          "volume_total": 88271,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 52,
+              "volume": 10510,
+              "band": "moderate"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 43,
+              "volume": 11576,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 62,
+              "volume": 13835,
+              "band": "elevated"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 40,
+              "volume": 7246,
+              "band": "moderate"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 43,
+              "volume": 9206,
+              "band": "moderate"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 39,
+              "volume": 8608,
+              "band": "low"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 60,
+              "volume": 14077,
+              "band": "elevated"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 55,
+              "volume": 13213,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              17340,
+              16973,
+              17306,
+              17901,
+              17423,
+              16999,
+              17554,
+              22247,
+              20438,
+              20118,
+              21403,
+              20484
+            ]
+          },
+          "events": [
+            {
+              "title": "Safety regulator grounds fleet pending inspections",
+              "magnitude": 2080,
+              "date": "2026-05-30",
+              "sources": 741,
+              "stories": 100,
+              "entities": [
+                "FAA"
+              ],
+              "categories": [
+                "product",
+                "regulatory"
+              ],
+              "article_id": ""
+            }
+          ]
+        }
+      ],
+      "regulatory": {
+        "automotive": [
+          {
+            "name": "EU Battery Passport traceability mandate",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-09",
+            "summary": "EV batteries require a digital passport covering provenance, carbon footprint and recyclability.",
+            "source": "https://eur-lex.europa.eu"
+          },
+          {
+            "name": "EU General Safety Regulation II \u2014 mandatory ADAS",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-09",
+            "summary": "New driver-assistance systems become mandatory on all new vehicle types.",
+            "source": "https://eur-lex.europa.eu"
+          },
+          {
+            "name": "US NHTSA automatic emergency braking rule",
+            "jurisdiction": "US",
+            "window": "6-12m",
+            "effective_date": "2027-02",
+            "summary": "Phase-in deadline for AEB performance standards on light vehicles.",
+            "source": "https://www.nhtsa.gov"
+          }
+        ],
+        "energy": [
+          {
+            "name": "EU methane-emissions monitoring rules",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-09",
+            "summary": "Mandatory leak-detection and reporting for upstream operators.",
+            "source": "https://energy.ec.europa.eu"
+          },
+          {
+            "name": "Carbon border adjustment \u2014 definitive phase",
+            "jurisdiction": "EU",
+            "window": "6-12m",
+            "effective_date": "2027-01",
+            "summary": "Importers of carbon-intensive goods begin paying the adjustment in full.",
+            "source": "https://taxation-customs.ec.europa.eu"
+          }
+        ],
+        "finance": [
+          {
+            "name": "EU DORA supervisory testing milestone",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-09",
+            "summary": "Digital Operational Resilience Act testing requirements take effect.",
+            "source": "https://www.eiopa.europa.eu"
+          },
+          {
+            "name": "Basel III endgame \u2014 output floor step-up",
+            "jurisdiction": "Global",
+            "window": "6-12m",
+            "effective_date": "2027-01",
+            "summary": "Higher capital floors phase in, reshaping risk-weight modelling.",
+            "source": "https://www.bis.org"
+          }
+        ],
+        "healthcare": [
+          {
+            "name": "EU Joint Clinical Assessment framework",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-09",
+            "summary": "Centralised health-technology assessment begins for new oncology and advanced therapies.",
+            "source": "https://health.ec.europa.eu"
+          },
+          {
+            "name": "US drug-pricing negotiation expansion",
+            "jurisdiction": "US",
+            "window": "6-12m",
+            "effective_date": "2027-01",
+            "summary": "Additional high-spend therapeutics enter negotiated-price selection.",
+            "source": "https://www.cms.gov"
+          }
+        ],
+        "technology": [
+          {
+            "name": "EU AI Act \u2014 high-risk system obligations",
+            "jurisdiction": "EU",
+            "window": "6-12m",
+            "effective_date": "2027-02",
+            "summary": "High-risk AI providers must complete conformity assessments and maintain technical documentation.",
+            "source": "https://artificialintelligenceact.eu"
+          },
+          {
+            "name": "EU DMA interoperability requirements",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-10",
+            "summary": "Designated gatekeepers face expanded data-portability and interoperability duties.",
+            "source": "https://digital-markets-act.ec.europa.eu"
+          }
+        ],
+        "fmcg": [
+          {
+            "name": "EU deforestation-free supply chain rule",
+            "jurisdiction": "EU",
+            "window": "6-12m",
+            "effective_date": "2027-01",
+            "summary": "Operators must prove key commodities are deforestation-free.",
+            "source": "https://environment.ec.europa.eu"
+          }
+        ],
+        "media": [
+          {
+            "name": "EU Digital Services Act audit cycle",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-10",
+            "summary": "Large platforms face the next independent systemic-risk audit.",
+            "source": "https://digital-strategy.ec.europa.eu"
+          }
+        ],
+        "retail": [
+          {
+            "name": "EU supply-chain due-diligence duty",
+            "jurisdiction": "EU",
+            "window": "6-12m",
+            "effective_date": "2027-01",
+            "summary": "Larger retailers must identify and address adverse labour and environmental impacts.",
+            "source": "https://commission.europa.eu"
+          }
+        ],
+        "professional_services": [
+          {
+            "name": "UK audit-market reform measures",
+            "jurisdiction": "UK",
+            "window": "6-12m",
+            "effective_date": "2027-03",
+            "summary": "Operational separation and resilience requirements for major audit firms.",
+            "source": "https://www.frc.org.uk"
+          }
+        ],
+        "travel": [
+          {
+            "name": "EU air passenger rights revision",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-10",
+            "summary": "Updated compensation thresholds and delay definitions for carriers.",
+            "source": "https://transport.ec.europa.eu"
+          }
+        ]
+      }
+    },
+    "2026-04": {
+      "label": "April 2026",
+      "live_sector": "automotive",
+      "industries": [
+        {
+          "key": "automotive",
+          "label": "Automotive",
+          "sector_note": "OEMs, EV makers, suppliers, mobility",
+          "risk_score": 41,
+          "delta": 4,
+          "seed": false,
+          "sentiment_neg": 0.44,
+          "volume_total": 199847,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 43,
+              "volume": 38326,
+              "band": "moderate"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 36,
+              "volume": 3853,
+              "band": "low"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 26,
+              "volume": 26340,
+              "band": "low"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 28,
+              "volume": 183,
+              "band": "low"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 30,
+              "volume": 22996,
+              "band": "low"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 46,
+              "volume": 87861,
+              "band": "moderate"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 50,
+              "volume": 17209,
+              "band": "moderate"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 43,
+              "volume": 3078,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              38444,
+              42786,
+              37411,
+              39418,
+              44694,
+              44323,
+              43260,
+              42156,
+              48586,
+              37969,
+              33816,
+              37321
+            ]
+          },
+          "events": [
+            {
+              "title": "3,700 Waymo vehicles recalled over software issue",
+              "magnitude": 13200,
+              "date": "2026-05-12",
+              "sources": 442,
+              "stories": 112,
+              "entities": [
+                "Waymo",
+                "NHTSA"
+              ],
+              "categories": [
+                "product",
+                "regulatory"
+              ],
+              "article_id": "445abde8-9ee5-3e3c-a3f1-d47e7ea8a489"
+            },
+            {
+              "title": "Subaru recalls nearly 70K vehicles over affected models",
+              "magnitude": 5610,
+              "date": "2026-06-04",
+              "sources": 192,
+              "stories": 8,
+              "entities": [
+                "Subaru"
+              ],
+              "categories": [
+                "product"
+              ],
+              "article_id": "bf5ef7fe-747d-3946-bc34-4996388f3fb1"
+            },
+            {
+              "title": "Toyota recalls 81K cars as dashboard failure hides safety alerts",
+              "magnitude": 4650,
+              "date": "2026-06-02",
+              "sources": 155,
+              "stories": 3,
+              "entities": [
+                "Toyota"
+              ],
+              "categories": [
+                "product"
+              ],
+              "article_id": "f8134cab-5c5a-373f-b3c6-cf2c9b8facf4"
+            },
+            {
+              "title": "Stellantis to recall 419,000 US vehicles over side air bag deployment",
+              "magnitude": 4290,
+              "date": "2026-05-21",
+              "sources": 205,
+              "stories": 97,
+              "entities": [
+                "Stellantis"
+              ],
+              "categories": [
+                "product"
+              ],
+              "article_id": "91b0e062-0781-3633-92d2-117d33269e6a"
+            },
+            {
+              "title": "Ford recalls vehicles after roofs can detach at highway speeds",
+              "magnitude": 4260,
+              "date": "2026-05-19",
+              "sources": 142,
+              "stories": 4,
+              "entities": [
+                "Ford"
+              ],
+              "categories": [
+                "product"
+              ],
+              "article_id": "44a3e2e9-f402-3d45-9bee-8fe8511d9560"
+            }
+          ]
+        },
+        {
+          "key": "energy",
+          "label": "Energy",
+          "sector_note": "Oil, gas, power, utilities, renewables",
+          "risk_score": 56,
+          "delta": 3,
+          "seed": true,
+          "sentiment_neg": 0.48,
+          "volume_total": 157328,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 67,
+              "volume": 22208,
+              "band": "elevated"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 46,
+              "volume": 16187,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 60,
+              "volume": 23922,
+              "band": "elevated"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 45,
+              "volume": 17865,
+              "band": "moderate"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 75,
+              "volume": 31790,
+              "band": "elevated"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 44,
+              "volume": 18596,
+              "band": "moderate"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 37,
+              "volume": 13092,
+              "band": "low"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 44,
+              "volume": 13668,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              32218,
+              32159,
+              32456,
+              29925,
+              31254,
+              30656,
+              31421,
+              33562,
+              32736,
+              34448,
+              33132,
+              36829
+            ]
+          },
+          "events": [
+            {
+              "title": "Regulator opens probe into grid-failure disclosures",
+              "magnitude": 1840,
+              "date": "2026-05-28",
+              "sources": 612,
+              "stories": 140,
+              "entities": [
+                "National Grid",
+                "Ofgem"
+              ],
+              "categories": [
+                "regulatory",
+                "operational"
+              ],
+              "article_id": ""
+            },
+            {
+              "title": "Court orders major emitter to accelerate decarbonisation",
+              "magnitude": 1210,
+              "date": "2026-05-19",
+              "sources": 503,
+              "stories": 90,
+              "entities": [
+                "Shell"
+              ],
+              "categories": [
+                "environmental",
+                "regulatory"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "finance",
+          "label": "Finance",
+          "sector_note": "Banks, insurers, asset managers, fintech",
+          "risk_score": 69,
+          "delta": -2,
+          "seed": true,
+          "sentiment_neg": 0.62,
+          "volume_total": 219339,
+          "band": "elevated",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 90,
+              "volume": 43028,
+              "band": "high"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 81,
+              "volume": 32943,
+              "band": "high"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 51,
+              "volume": 20426,
+              "band": "moderate"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 81,
+              "volume": 31843,
+              "band": "high"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 34,
+              "volume": 14260,
+              "band": "low"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 74,
+              "volume": 37781,
+              "band": "elevated"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 43,
+              "volume": 18887,
+              "band": "moderate"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 48,
+              "volume": 20171,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              46537,
+              42317,
+              45398,
+              46635,
+              46106,
+              44107,
+              41251,
+              40176,
+              37325,
+              39843,
+              38263,
+              41706
+            ]
+          },
+          "events": [
+            {
+              "title": "Conduct authority fines lender over mis-sold products",
+              "magnitude": 1520,
+              "date": "2026-05-26",
+              "sources": 488,
+              "stories": 80,
+              "entities": [
+                "FCA"
+              ],
+              "categories": [
+                "regulatory",
+                "governance"
+              ],
+              "article_id": ""
+            },
+            {
+              "title": "Credential-stuffing wave hits mobile banking apps",
+              "magnitude": 1100,
+              "date": "2026-05-14",
+              "sources": 357,
+              "stories": 55,
+              "entities": [],
+              "categories": [
+                "cyber"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "fmcg",
+          "label": "FMCG",
+          "sector_note": "Food, beverage, household, personal care",
+          "risk_score": 58,
+          "delta": -1,
+          "seed": true,
+          "sentiment_neg": 0.61,
+          "volume_total": 146688,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 50,
+              "volume": 17328,
+              "band": "moderate"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 53,
+              "volume": 18317,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 69,
+              "volume": 18300,
+              "band": "elevated"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 41,
+              "volume": 14506,
+              "band": "moderate"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 62,
+              "volume": 20812,
+              "band": "elevated"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 47,
+              "volume": 14599,
+              "band": "moderate"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 74,
+              "volume": 24662,
+              "band": "elevated"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 56,
+              "volume": 18164,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              28701,
+              29424,
+              28399,
+              32250,
+              29528,
+              30357,
+              29284,
+              28576,
+              28811,
+              27527,
+              26507,
+              28032
+            ]
+          },
+          "events": [
+            {
+              "title": "Food brand recalls product over contamination",
+              "magnitude": 980,
+              "date": "2026-06-01",
+              "sources": 260,
+              "stories": 40,
+              "entities": [],
+              "categories": [
+                "product",
+                "operational"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "healthcare",
+          "label": "Healthcare",
+          "sector_note": "Pharma, providers, medtech, biotech",
+          "risk_score": 56,
+          "delta": 1,
+          "seed": true,
+          "sentiment_neg": 0.53,
+          "volume_total": 116522,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 74,
+              "volume": 23809,
+              "band": "elevated"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 44,
+              "volume": 13174,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 49,
+              "volume": 11931,
+              "band": "moderate"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 46,
+              "volume": 12517,
+              "band": "moderate"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 33,
+              "volume": 10423,
+              "band": "low"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 62,
+              "volume": 17471,
+              "band": "elevated"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 69,
+              "volume": 18067,
+              "band": "elevated"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 36,
+              "volume": 9130,
+              "band": "low"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              21938,
+              22510,
+              22210,
+              23836,
+              22828,
+              23144,
+              21083,
+              24480,
+              24549,
+              22785,
+              22325,
+              25443
+            ]
+          },
+          "events": [
+            {
+              "title": "Agency flags safety signal for blockbuster therapy",
+              "magnitude": 1390,
+              "date": "2026-05-24",
+              "sources": 512,
+              "stories": 60,
+              "entities": [
+                "FDA"
+              ],
+              "categories": [
+                "product",
+                "regulatory"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "media",
+          "label": "Media",
+          "sector_note": "Broadcast, publishing, streaming, platforms",
+          "risk_score": 44,
+          "delta": 2,
+          "seed": true,
+          "sentiment_neg": 0.49,
+          "volume_total": 90527,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 55,
+              "volume": 17458,
+              "band": "moderate"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 43,
+              "volume": 12061,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 33,
+              "volume": 9230,
+              "band": "low"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 51,
+              "volume": 12892,
+              "band": "moderate"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 22,
+              "volume": 5504,
+              "band": "low"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 50,
+              "volume": 13765,
+              "band": "moderate"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 31,
+              "volume": 7958,
+              "band": "low"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 38,
+              "volume": 11659,
+              "band": "low"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              18579,
+              19006,
+              18634,
+              17757,
+              17616,
+              18211,
+              17211,
+              19335,
+              20101,
+              19330,
+              20857,
+              19126
+            ]
+          },
+          "events": [
+            {
+              "title": "Platform faces scrutiny over content-moderation rules",
+              "magnitude": 760,
+              "date": "2026-05-27",
+              "sources": 210,
+              "stories": 35,
+              "entities": [],
+              "categories": [
+                "regulatory",
+                "governance"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "professional_services",
+          "label": "Professional Services",
+          "sector_note": "Consulting, legal, audit, advisory",
+          "risk_score": 46,
+          "delta": 1,
+          "seed": true,
+          "sentiment_neg": 0.55,
+          "volume_total": 71961,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 55,
+              "volume": 11266,
+              "band": "moderate"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 50,
+              "volume": 11248,
+              "band": "moderate"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 34,
+              "volume": 5786,
+              "band": "low"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 50,
+              "volume": 12554,
+              "band": "moderate"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 27,
+              "volume": 6468,
+              "band": "low"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 61,
+              "volume": 10991,
+              "band": "elevated"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 29,
+              "volume": 4800,
+              "band": "low"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 39,
+              "volume": 8847,
+              "band": "low"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              14143,
+              13934,
+              14407,
+              15645,
+              14891,
+              14326,
+              14188,
+              13144,
+              14422,
+              14006,
+              14640,
+              14620
+            ]
+          },
+          "events": [
+            {
+              "title": "Consultancy faces audit-quality investigation",
+              "magnitude": 640,
+              "date": "2026-05-19",
+              "sources": 150,
+              "stories": 18,
+              "entities": [],
+              "categories": [
+                "governance",
+                "regulatory"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "retail",
+          "label": "Retail",
+          "sector_note": "Grocers, apparel, e-commerce",
+          "risk_score": 62,
+          "delta": -4,
+          "seed": true,
+          "sentiment_neg": 0.68,
+          "volume_total": 162525,
+          "band": "elevated",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 45,
+              "volume": 13555,
+              "band": "moderate"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 67,
+              "volume": 21334,
+              "band": "elevated"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 73,
+              "volume": 24566,
+              "band": "elevated"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 61,
+              "volume": 25127,
+              "band": "elevated"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 52,
+              "volume": 18022,
+              "band": "moderate"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 49,
+              "volume": 16031,
+              "band": "moderate"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 57,
+              "volume": 20244,
+              "band": "moderate"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 80,
+              "volume": 23646,
+              "band": "high"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              34074,
+              33066,
+              31330,
+              31564,
+              35663,
+              31321,
+              31910,
+              28549,
+              29390,
+              28328,
+              26371,
+              26951
+            ]
+          },
+          "events": [
+            {
+              "title": "Retailer breach exposes customer payment data",
+              "magnitude": 1120,
+              "date": "2026-05-31",
+              "sources": 340,
+              "stories": 60,
+              "entities": [],
+              "categories": [
+                "cyber"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "technology",
+          "label": "Technology",
+          "sector_note": "Software, hardware, platforms, AI",
+          "risk_score": 43,
+          "delta": 6,
+          "seed": true,
+          "sentiment_neg": 0.41,
+          "volume_total": 197223,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 54,
+              "volume": 33895,
+              "band": "moderate"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 39,
+              "volume": 25716,
+              "band": "low"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 27,
+              "volume": 17755,
+              "band": "low"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 60,
+              "volume": 39062,
+              "band": "elevated"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 20,
+              "volume": 15046,
+              "band": "low"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 45,
+              "volume": 31422,
+              "band": "moderate"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 34,
+              "volume": 16845,
+              "band": "low"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 33,
+              "volume": 17480,
+              "band": "low"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              40641,
+              39499,
+              38950,
+              38232,
+              41143,
+              38082,
+              40326,
+              46023,
+              50937,
+              45755,
+              45512,
+              46422
+            ]
+          },
+          "events": [
+            {
+              "title": "Antitrust suit targets platform bundling practices",
+              "magnitude": 1980,
+              "date": "2026-05-27",
+              "sources": 690,
+              "stories": 120,
+              "entities": [
+                "DOJ"
+              ],
+              "categories": [
+                "regulatory",
+                "governance"
+              ],
+              "article_id": ""
+            },
+            {
+              "title": "Zero-day exploit hits widely used enterprise stack",
+              "magnitude": 1520,
+              "date": "2026-05-13",
+              "sources": 540,
+              "stories": 80,
+              "entities": [],
+              "categories": [
+                "cyber"
+              ],
+              "article_id": ""
+            }
+          ]
+        },
+        {
+          "key": "travel",
+          "label": "Travel",
+          "sector_note": "Airlines, hotels, OTAs, tourism",
+          "risk_score": 44,
+          "delta": 5,
+          "seed": true,
+          "sentiment_neg": 0.42,
+          "volume_total": 76156,
+          "band": "moderate",
+          "categories": [
+            {
+              "key": "regulatory",
+              "label": "Regulatory & legal",
+              "score": 45,
+              "volume": 9068,
+              "band": "moderate"
+            },
+            {
+              "key": "financial",
+              "label": "Financial & market",
+              "score": 37,
+              "volume": 9987,
+              "band": "low"
+            },
+            {
+              "key": "operational",
+              "label": "Operational & supply",
+              "score": 54,
+              "volume": 11936,
+              "band": "moderate"
+            },
+            {
+              "key": "cyber",
+              "label": "Cyber & data",
+              "score": 35,
+              "volume": 6252,
+              "band": "low"
+            },
+            {
+              "key": "environmental",
+              "label": "Environmental & climate",
+              "score": 37,
+              "volume": 7942,
+              "band": "low"
+            },
+            {
+              "key": "governance",
+              "label": "Governance & ethics",
+              "score": 33,
+              "volume": 7427,
+              "band": "low"
+            },
+            {
+              "key": "product",
+              "label": "Product & safety",
+              "score": 52,
+              "volume": 12145,
+              "band": "moderate"
+            },
+            {
+              "key": "labor",
+              "label": "Labour & workforce",
+              "score": 48,
+              "volume": 11399,
+              "band": "moderate"
+            }
+          ],
+          "trend": {
+            "weeks": [
+              "2026-03-16",
+              "2026-03-23",
+              "2026-03-30",
+              "2026-04-06",
+              "2026-04-13",
+              "2026-04-20",
+              "2026-04-27",
+              "2026-05-04",
+              "2026-05-11",
+              "2026-05-18",
+              "2026-05-25",
+              "2026-06-01"
+            ],
+            "values": [
+              14960,
+              14644,
+              14930,
+              15444,
+              15031,
+              14666,
+              15144,
+              19193,
+              17633,
+              17356,
+              18466,
+              17673
+            ]
+          },
+          "events": [
+            {
+              "title": "Safety regulator grounds fleet pending inspections",
+              "magnitude": 2080,
+              "date": "2026-05-30",
+              "sources": 741,
+              "stories": 100,
+              "entities": [
+                "FAA"
+              ],
+              "categories": [
+                "product",
+                "regulatory"
+              ],
+              "article_id": ""
+            }
+          ]
+        }
+      ],
+      "regulatory": {
+        "automotive": [
+          {
+            "name": "EU Battery Passport traceability mandate",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-09",
+            "summary": "EV batteries require a digital passport covering provenance, carbon footprint and recyclability.",
+            "source": "https://eur-lex.europa.eu"
+          },
+          {
+            "name": "EU General Safety Regulation II \u2014 mandatory ADAS",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-09",
+            "summary": "New driver-assistance systems become mandatory on all new vehicle types.",
+            "source": "https://eur-lex.europa.eu"
+          },
+          {
+            "name": "US NHTSA automatic emergency braking rule",
+            "jurisdiction": "US",
+            "window": "6-12m",
+            "effective_date": "2027-02",
+            "summary": "Phase-in deadline for AEB performance standards on light vehicles.",
+            "source": "https://www.nhtsa.gov"
+          }
+        ],
+        "energy": [
+          {
+            "name": "EU methane-emissions monitoring rules",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-09",
+            "summary": "Mandatory leak-detection and reporting for upstream operators.",
+            "source": "https://energy.ec.europa.eu"
+          },
+          {
+            "name": "Carbon border adjustment \u2014 definitive phase",
+            "jurisdiction": "EU",
+            "window": "6-12m",
+            "effective_date": "2027-01",
+            "summary": "Importers of carbon-intensive goods begin paying the adjustment in full.",
+            "source": "https://taxation-customs.ec.europa.eu"
+          }
+        ],
+        "finance": [
+          {
+            "name": "EU DORA supervisory testing milestone",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-09",
+            "summary": "Digital Operational Resilience Act testing requirements take effect.",
+            "source": "https://www.eiopa.europa.eu"
+          },
+          {
+            "name": "Basel III endgame \u2014 output floor step-up",
+            "jurisdiction": "Global",
+            "window": "6-12m",
+            "effective_date": "2027-01",
+            "summary": "Higher capital floors phase in, reshaping risk-weight modelling.",
+            "source": "https://www.bis.org"
+          }
+        ],
+        "healthcare": [
+          {
+            "name": "EU Joint Clinical Assessment framework",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-09",
+            "summary": "Centralised health-technology assessment begins for new oncology and advanced therapies.",
+            "source": "https://health.ec.europa.eu"
+          },
+          {
+            "name": "US drug-pricing negotiation expansion",
+            "jurisdiction": "US",
+            "window": "6-12m",
+            "effective_date": "2027-01",
+            "summary": "Additional high-spend therapeutics enter negotiated-price selection.",
+            "source": "https://www.cms.gov"
+          }
+        ],
+        "technology": [
+          {
+            "name": "EU AI Act \u2014 high-risk system obligations",
+            "jurisdiction": "EU",
+            "window": "6-12m",
+            "effective_date": "2027-02",
+            "summary": "High-risk AI providers must complete conformity assessments and maintain technical documentation.",
+            "source": "https://artificialintelligenceact.eu"
+          },
+          {
+            "name": "EU DMA interoperability requirements",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-10",
+            "summary": "Designated gatekeepers face expanded data-portability and interoperability duties.",
+            "source": "https://digital-markets-act.ec.europa.eu"
+          }
+        ],
+        "fmcg": [
+          {
+            "name": "EU deforestation-free supply chain rule",
+            "jurisdiction": "EU",
+            "window": "6-12m",
+            "effective_date": "2027-01",
+            "summary": "Operators must prove key commodities are deforestation-free.",
+            "source": "https://environment.ec.europa.eu"
+          }
+        ],
+        "media": [
+          {
+            "name": "EU Digital Services Act audit cycle",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-10",
+            "summary": "Large platforms face the next independent systemic-risk audit.",
+            "source": "https://digital-strategy.ec.europa.eu"
+          }
+        ],
+        "retail": [
+          {
+            "name": "EU supply-chain due-diligence duty",
+            "jurisdiction": "EU",
+            "window": "6-12m",
+            "effective_date": "2027-01",
+            "summary": "Larger retailers must identify and address adverse labour and environmental impacts.",
+            "source": "https://commission.europa.eu"
+          }
+        ],
+        "professional_services": [
+          {
+            "name": "UK audit-market reform measures",
+            "jurisdiction": "UK",
+            "window": "6-12m",
+            "effective_date": "2027-03",
+            "summary": "Operational separation and resilience requirements for major audit firms.",
+            "source": "https://www.frc.org.uk"
+          }
+        ],
+        "travel": [
+          {
+            "name": "EU air passenger rights revision",
+            "jurisdiction": "EU",
+            "window": "3-6m",
+            "effective_date": "2026-10",
+            "summary": "Updated compensation thresholds and delay definitions for carriers.",
+            "source": "https://transport.ec.europa.eu"
+          }
+        ]
+      }
+    }
+  }
+}

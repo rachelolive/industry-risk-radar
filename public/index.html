@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signal AI — Industry Risk Radar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>/* cyrillic-ext */
+
+/* cyrillic */
+
+/* greek */
+
+/* vietnamese */
+
+/* latin-ext */
+
+/* latin */
+
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* greek */
+
+/* vietnamese */
+
+/* latin-ext */
+
+/* latin */
+
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* greek */
+
+/* vietnamese */
+
+/* latin-ext */
+
+/* latin */
+
+/* devanagari */
+
+/* latin-ext */
+
+/* latin */
+
+/* devanagari */
+
+/* latin-ext */
+
+/* latin */
+
+/* devanagari */
+
+/* latin-ext */
+
+/* latin */
+
+/* devanagari */
+
+/* latin-ext */
+
+/* latin */
+
+/* devanagari */
+
+/* latin-ext */
+
+/* latin */
+
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="data.js"></script>
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    /* brand swatches */
+    --signal-red:#FF585D; --neptune:#6446FF; --digitalis:#AF46B4;
+    --seafoam:#82DCBE; --coral:#FFA0A0; --sunshine:#FFC864; --orange:#FF705A;
+    --warm-black:#2F2F2F; --soft-white:#DFCFCA; --fog:#F5F4EE; --white:#FFFFFF;
+    --celestial:linear-gradient(135deg,#6446FF 0%,#AF46B4 50%,#FF585D 100%);
+    /* surfaces & ink */
+    --canvas:#F5F4EE; --surface:#FFFFFF; --ink-1:#23211F; --ink-2:#5A5853; --ink-3:#8C897F;
+    --line:rgba(47,47,47,.10); --line-2:rgba(47,47,47,.16);
+    /* band — readable text + soft fills */
+    --low:#0E9A6B;     --low-soft:rgba(130,220,190,.20);
+    --mod:#B07A14;     --mod-soft:rgba(255,200,100,.22);
+    --elev:#D8531E;    --elev-soft:rgba(255,112,90,.16);
+    --high:#FF585D;    --high-soft:rgba(255,88,93,.12);
+    --shadow-1:0 1px 2px rgba(47,47,47,.05),0 1px 1px rgba(47,47,47,.04);
+    --shadow-2:0 6px 24px rgba(47,47,47,.07),0 2px 6px rgba(47,47,47,.04);
+    --ease:cubic-bezier(.2,0,0,1);
+    --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+    --sans:'Poppins',-apple-system,BlinkMacSystemFont,system-ui,sans-serif;
+  }
+  html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+  body{font-family:var(--sans);font-weight:300;background:var(--canvas);color:var(--ink-1);line-height:1.5;}
+  .mono{font-family:var(--mono);font-feature-settings:"tnum" 1,"zero" 1;}
+  .over{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);font-family:var(--mono);}
+  a{color:var(--signal-red);text-decoration:none}
+  a:hover{text-decoration:underline;text-underline-offset:2px}
+
+  /* ============ MASTHEAD ============ */
+  header.mast{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);
+    backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid var(--line-2);}
+  .mast-in{max-width:1480px;margin:0 auto;padding:14px 32px;display:flex;align-items:center;gap:22px;}
+  .mast .logo{height:24px;display:block}
+  .mast .div{width:1px;height:26px;background:var(--line-2)}
+  .mast .title{font-weight:600;font-size:15px;letter-spacing:-.01em}
+  .mast .title small{display:block;font-weight:400;font-size:11px;color:var(--ink-3);letter-spacing:0}
+  .mast .right{margin-left:auto;display:flex;align-items:center;gap:18px}
+  .period-wrap{display:inline-flex;align-items:center;gap:8px}
+  .period-lbl{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+  select.period{font-family:var(--mono);font-size:12px;font-weight:500;color:var(--ink-1);
+    background-color:var(--fog);border:1px solid var(--line);border-radius:999px;padding:6px 30px 6px 13px;cursor:pointer;
+    -webkit-appearance:none;appearance:none;line-height:1;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none'><path d='M1 1l4 4 4-4' stroke='%238C897F' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    background-repeat:no-repeat;background-position:right 11px center;transition:border-color var(--ease) .16s;}
+  select.period:hover{border-color:var(--ink-3)}
+  select.period:focus{outline:none;border-color:var(--signal-red)}
+  .dot-static{width:8px;height:8px;border-radius:50%;background:var(--ink-3)}
+  .asof{font-family:var(--mono);font-size:11.5px;color:var(--ink-3)}
+  .live{display:flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11.5px;color:var(--ink-2);font-weight:500}
+  .live .pulse{width:8px;height:8px;border-radius:50%;background:var(--low);position:relative}
+  .live .pulse::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:1px solid var(--low);
+    opacity:.5;animation:ping 2.4s var(--ease) infinite}
+  @keyframes ping{0%{transform:scale(.6);opacity:.6}80%,100%{transform:scale(1.7);opacity:0}}
+
+  /* ============ INTRO STRIP ============ */
+  .intro{max-width:1480px;margin:0 auto;padding:34px 32px 8px;display:flex;align-items:flex-end;
+    justify-content:space-between;gap:40px;flex-wrap:wrap;position:relative;}
+  .intro h1{font-weight:700;font-size:40px;line-height:1.02;letter-spacing:-.02em;max-width:18ch}
+  .intro h1 em{font-style:normal;color:var(--signal-red)}
+  .intro p{font-weight:300;font-size:14.5px;color:var(--ink-2);max-width:46ch;margin-top:12px;line-height:1.55}
+  .intro .tri{position:absolute;right:18px;top:-26px;width:150px;opacity:.5;pointer-events:none}
+
+  /* ============ APP LAYOUT ============ */
+  .app{max-width:1480px;margin:0 auto;padding:22px 32px 0;}
+  .layout{display:grid;grid-template-columns:332px 1fr;gap:26px;align-items:start;}
+
+  /* ---- panel base ---- */
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow-1);}
+  .phead{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--line);}
+  .phead .over{color:var(--ink-2)}
+
+  /* ============ RISK INDEX RAIL ============ */
+  .rail{position:sticky;top:74px}
+  .rail .phead .count{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+  .rrow{display:grid;grid-template-columns:20px 1fr auto;gap:12px;align-items:center;
+    padding:12px 18px 12px 16px;border-bottom:1px solid var(--line);cursor:pointer;position:relative;
+    transition:background var(--ease) .16s;border-left:3px solid transparent;}
+  .rrow:last-child{border-bottom:none;border-radius:0 0 16px 16px}
+  .rrow:hover{background:var(--fog)}
+  .rrow.on{background:var(--fog);border-left-color:var(--signal-red)}
+  .rrow .rank{font-family:var(--mono);font-size:12px;color:var(--ink-3);text-align:center}
+  .rrow .nm{font-weight:500;font-size:13.5px;letter-spacing:-.01em;line-height:1.2}
+  .rrow .sub{font-size:10.5px;color:var(--ink-3);margin-top:2px;line-height:1.2}
+  .rrow .met{display:flex;align-items:center;gap:10px}
+  .rrow .spark{width:54px;height:22px;display:block}
+  .rrow .scwrap{text-align:right;min-width:46px}
+  .rrow .sc{font-family:var(--mono);font-weight:600;font-size:18px;line-height:1}
+  .rrow .dl{font-family:var(--mono);font-size:10.5px;font-weight:500;margin-top:2px;display:block}
+
+  /* ============ HERO FEATURE PANEL ============ */
+  .stack{display:flex;flex-direction:column;gap:26px}
+  .hero{padding:0;overflow:hidden;position:relative}
+  .hero .htop{display:flex;justify-content:space-between;gap:24px;padding:24px 28px 20px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+  .hero .hname{font-weight:700;font-size:30px;letter-spacing:-.02em;line-height:1.02}
+  .hero .hsub{font-size:13px;color:var(--ink-2);margin-top:6px}
+  .prov{display:inline-flex;align-items:center;gap:7px;margin-top:14px;font-family:var(--mono);
+    font-size:11px;font-weight:500;padding:5px 11px;border-radius:999px;border:1px solid var(--line);}
+  .prov .d{width:7px;height:7px;border-radius:50%}
+  .prov.sample{color:var(--mod);background:var(--mod-soft);border-color:transparent}
+  .prov.livep{color:var(--low);background:var(--low-soft);border-color:transparent}
+
+  .scorebox{text-align:right;flex-shrink:0;min-width:188px}
+  .scorebox .lbl{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+  .scorebox .big{font-family:var(--mono);font-weight:600;font-size:68px;line-height:1;letter-spacing:-.03em;white-space:nowrap;margin-top:4px}
+  .scorebox .big .den{font-size:22px;color:var(--ink-3);font-weight:400;letter-spacing:0}
+  .scorebox .band{font-weight:600;font-size:13px;letter-spacing:.02em;margin-top:6px}
+  .scorebox .dl{font-family:var(--mono);font-size:12px;font-weight:500;margin-top:10px;display:inline-flex;
+    align-items:center;gap:6px;padding:5px 11px;border-radius:999px;background:var(--fog);white-space:nowrap}
+
+  .hbody{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:8px;}
+  .radarwrap{padding:14px 18px 22px;position:relative;min-height:340px;display:flex;align-items:center;justify-content:center}
+  .radarwrap canvas{max-height:330px}
+  .breakdown{border-left:1px solid var(--line);padding:18px 22px 18px}
+  .breakdown .over{margin-bottom:14px;display:block}
+  .crow{margin-bottom:13px;cursor:default}
+  .crow .ct{display:flex;justify-content:space-between;align-items:baseline;font-size:12.5px;margin-bottom:5px}
+  .crow .ct .cl{font-weight:500;color:var(--ink-1)}
+  .crow .ct .cv{font-family:var(--mono);font-size:11px;color:var(--ink-3);white-space:nowrap;padding-left:10px}
+  .ctrack{height:6px;background:var(--fog);border-radius:999px;overflow:hidden}
+  .cfill{height:100%;border-radius:999px}
+  .ministats{display:flex;gap:0;border-top:1px solid var(--line);}
+  .ministats .ms{flex:1;padding:14px 28px;border-right:1px solid var(--line)}
+  .ministats .ms:last-child{border-right:none}
+  .ministats .ms .v{font-family:var(--mono);font-weight:600;font-size:20px;letter-spacing:-.01em}
+  .ministats .ms .k{font-size:11px;color:var(--ink-3);margin-top:2px}
+
+  /* ============ TREND ============ */
+  .trend-body{padding:18px 22px 22px}
+  .trend-body canvas{width:100%}
+
+  /* ============ TWO-UP ============ */
+  .twoup{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+
+  /* events */
+  .ev{display:grid;grid-template-columns:58px 1fr;gap:16px;padding:16px 20px;border-bottom:1px solid var(--line);transition:background var(--ease) .16s}
+  .ev:last-child{border-bottom:none}
+  .ev:hover{background:var(--fog)}
+  .ev .mag{text-align:center}
+  .ev .mag b{font-family:var(--mono);display:block;font-size:19px;font-weight:600;color:var(--signal-red);line-height:1}
+  .ev .mag s{font-size:9px;text-decoration:none;color:var(--ink-3);text-transform:uppercase;letter-spacing:.08em;font-family:var(--mono)}
+  .ev .et{font-weight:500;font-size:14px;line-height:1.3;letter-spacing:-.01em}
+  .ev .emeta{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin-top:6px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+  .chip{font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:999px;background:var(--fog);color:var(--ink-2);border:1px solid var(--line)}
+  .chip.cat{background:rgba(100,70,255,.08);color:var(--neptune);border-color:transparent}
+  .empty{padding:30px 20px;text-align:center;color:var(--ink-3);font-size:13px}
+
+  /* regulation */
+  .regbar{display:flex;gap:6px;padding:14px 20px 0}
+  .seg{font-family:var(--mono);font-weight:500;font-size:11.5px;border:1px solid var(--line-2);background:transparent;
+    color:var(--ink-2);border-radius:999px;padding:7px 14px;cursor:pointer;transition:all var(--ease) .16s;white-space:nowrap}
+  .seg:hover{border-color:var(--ink-3)}
+  .seg.on{background:var(--warm-black);color:var(--fog);border-color:var(--warm-black)}
+  .reg{padding:16px 20px;border-bottom:1px solid var(--line)}
+  .reg:last-child{border-bottom:none}
+  .reg .rt{font-weight:500;font-size:14px;letter-spacing:-.01em;line-height:1.3}
+  .reg .rmeta{display:flex;align-items:center;gap:8px;margin-top:7px}
+  .jur{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.04em;padding:2px 7px;border-radius:5px;background:var(--soft-white);color:var(--warm-black)}
+  .rdate{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+  .rsum{font-size:12.5px;color:var(--ink-2);margin-top:9px;line-height:1.5}
+
+  /* ============ FOOTER ============ */
+  footer{background:var(--warm-black);color:var(--fog);margin-top:48px}
+  .foot-in{max-width:1480px;margin:0 auto;padding:40px 32px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+  footer .over{color:rgba(245,244,238,.5)}
+  footer h4{font-weight:600;font-size:14px;margin:10px 0 8px;letter-spacing:-.01em}
+  footer p{font-size:12.5px;color:rgba(245,244,238,.66);line-height:1.6}
+  footer .formula{font-family:var(--mono);font-size:11.5px;color:rgba(245,244,238,.8);margin-top:6px;line-height:1.9}
+  footer .formula b{color:var(--signal-red);font-weight:600}
+  .foot-bottom{border-top:1px solid rgba(245,244,238,.12);padding:16px 32px;max-width:1480px;margin:0 auto;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-family:var(--mono);font-size:11px;color:rgba(245,244,238,.5)}
+
+  /* ============ ENTRANCE ============ */
+  /* base state IS the visible end-state. The entrance animates transform ONLY and never
+     touches opacity, so content is always visible — print, PDF, reduced-motion, or any
+     paused-compositing capture. The gentle rise is a pure live-browser enhancement. */
+  .reveal{opacity:1;transform:none}
+  @media (prefers-reduced-motion:no-preference){
+    .reveal{animation:riseIn .55s var(--ease)}
+  }
+  @media print{ .reveal{animation:none} }
+  @keyframes riseIn{from{transform:translateY(16px)} to{transform:none}}
+
+  @media(max-width:1080px){
+    .layout{grid-template-columns:1fr}
+    .rail{position:static}
+    .hbody{grid-template-columns:1fr}
+    .breakdown{border-left:none;border-top:1px solid var(--line)}
+  }
+  @media(max-width:720px){
+    .intro h1{font-size:30px}.twoup{grid-template-columns:1fr}
+    .scorebox .big{font-size:58px}.foot-in{grid-template-columns:1fr}
+    .mast .title small{display:none}
+  }
+</style>
+</head>
+<body>
+
+
+
+
+<header class="mast">
+  <div class="mast-in">
+    <img class="logo" src="assets/logo.png" alt="Signal AI">
+    <span class="div"></span>
+    <div class="title">Industry risk radar<small>Reputation &amp; risk intelligence</small></div>
+    <div class="right">
+      <span class="period-wrap"><span class="period-lbl">Period</span><select class="period" id="period" aria-label="Select month"></select></span>
+      <span class="live" id="liveInd"><span class="pulse"></span>Live feed</span>
+    </div>
+  </div>
+</header>
+
+<div class="intro reveal">
+  <img class="tri" src="assets/tri.png" alt="">
+  <div>
+    <h1>Where reputational risk is <em>concentrating</em> this month.</h1>
+    <p>Eight industries, eight risk categories, ranked by signal intensity — and the regulation to watch next. Powered by Signal AI across 226 markets and 120+ languages.</p>
+  </div>
+</div>
+
+<div class="app">
+  <div class="layout">
+
+    <!-- ============ LEFT: RISK INDEX ============ -->
+    <aside class="panel rail reveal">
+      <div class="phead">
+        <span class="over">Risk index</span>
+        <span class="count" id="railCount">—</span>
+      </div>
+      <div id="rail"></div>
+    </aside>
+
+    <!-- ============ RIGHT: DETAIL ============ -->
+    <div class="stack">
+
+      <!-- HERO -->
+      <section class="panel hero reveal">
+        <div class="htop">
+          <div>
+            <div class="hname" id="hName">—</div>
+            <div class="hsub" id="hSub">—</div>
+            <div class="prov" id="prov"></div>
+          </div>
+          <div class="scorebox">
+            <div class="lbl">Risk score</div>
+            <div class="big"><span id="score">—</span><span class="den"> / 100</span></div>
+            <div class="band" id="band">—</div>
+            <div class="dl" id="delta"></div>
+          </div>
+        </div>
+        <div class="hbody">
+          <div class="radarwrap"><canvas id="radar"></canvas></div>
+          <div class="breakdown">
+            <span class="over">Category breakdown</span>
+            <div id="bars"></div>
+          </div>
+        </div>
+        <div class="ministats" id="ministats"></div>
+      </section>
+
+      <!-- TREND -->
+      <section class="panel reveal">
+        <div class="phead">
+          <span class="over">Risk events over time</span>
+          <span class="over" style="color:var(--ink-3)">Last 12 weeks</span>
+        </div>
+        <div class="trend-body"><canvas id="trend" height="96"></canvas></div>
+      </section>
+
+      <!-- TWO-UP -->
+      <div class="twoup">
+        <section class="panel reveal">
+          <div class="phead"><span class="over">What's driving it</span><span class="over" style="color:var(--ink-3)">Top events</span></div>
+          <div id="events"></div>
+        </section>
+        <section class="panel reveal">
+          <div class="phead"><span class="over">Regulation to watch</span></div>
+          <div class="regbar">
+            <button class="seg on" data-win="3-6m">Effective · 3–6 mo</button>
+            <button class="seg" data-win="6-12m">Watch · 6–12 mo</button>
+          </div>
+          <div id="regList"></div>
+        </section>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer class="reveal">
+  <div class="foot-in">
+    <div>
+      <span class="over">Methodology</span>
+      <h4>How the risk score is built</h4>
+      <div class="formula">
+        <b>0.40</b> × volume momentum &nbsp;<span style="opacity:.4">(30d vs 90d baseline)</span><br>
+        <b>0.35</b> × negativity &nbsp;<span style="opacity:.4">(share of negative coverage)</span><br>
+        <b>0.25</b> × event severity &nbsp;<span style="opacity:.4">(log of peak magnitude)</span>
+      </div>
+      <p style="margin-top:10px">Rolled up across eight risk categories, volume-weighted, then normalised to a 0–100 scale.</p>
+    </div>
+    <div>
+      <span class="over">Data sources</span>
+      <h4>What feeds the radar</h4>
+      <p>Risk scores derive from Signal AI media data across traditional, broadcast, and social sources. Regulation is web-sourced and human-reviewed at each monthly refresh.</p>
+    </div>
+    <div>
+      <span class="over">Coverage</span>
+      <h4>Global by default</h4>
+      <p>226 markets · 120+ languages · billions of external signals processed continuously. Sector tabs marked “sample” populate with live data on first refresh.</p>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>Signal AI · Industry risk radar</span>
+    <span id="footAsOf"></span>
+    <span>Mitigate risk, strengthen reputation</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+
+
+</body></html>

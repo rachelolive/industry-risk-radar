@@ -1,0 +1,16 @@
+{
+  "as_of": "2026-06",
+  "methodology_version": "2.0",
+  "scores": {
+    "automotive": 53,
+    "energy": 64,
+    "finance": 63,
+    "fmcg": 54,
+    "healthcare": 60,
+    "media": 50,
+    "professional_services": 48,
+    "retail": 52,
+    "technology": 61,
+    "travel": 58
+  }
+}
